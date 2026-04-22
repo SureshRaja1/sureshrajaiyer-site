@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Press Kit — Suresh Raja Iyer</title>
+  <meta name="description" content="Official press kit for Suresh Raja Iyer. Bio, photos, discography, and contact information for media and collaborators."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet"/>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK9LCJMJ3L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TK9LCJMJ3L');</script>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;}
+    :root{--bg:#fff;--text:#1a1a1a;--muted:#6b6b6b;--accent:#b8860b;--border:#e8e8e8;}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:20px 60px;background:rgba(255,255,255,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--text);text-decoration:none;}
+    .nav-links{display:flex;gap:28px;list-style:none;}
+    .nav-links a{text-decoration:none;color:var(--muted);font-size:0.8rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s;}
+    .nav-links a:hover{color:var(--text);}
+    .page-wrap{max-width:960px;margin:0 auto;padding:140px 40px 80px;}
+    .section-label{font-size:0.72rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+    .divider{width:48px;height:2px;background:var(--accent);margin-bottom:40px;}
+    .page-title{font-family:'Playfair Display',serif;font-size:3rem;font-weight:600;margin-bottom:16px;}
+    .hero-block{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:80px;padding-bottom:60px;border-bottom:1px solid var(--border);}
+    .hero-photo{width:100%;aspect-ratio:1;overflow:hidden;border:1px solid var(--border);}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;}
+    .hero-text h2{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:16px;}
+    .hero-text p{color:var(--muted);font-weight:300;margin-bottom:12px;}
+    .pk-section{margin-bottom:60px;padding-bottom:60px;border-bottom:1px solid var(--border);}
+    .pk-section:last-child{border-bottom:none;}
+    .pk-section h3{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:24px;}
+    .facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    .fact{background:#fafafa;border:1px solid var(--border);padding:20px 24px;}
+    .fact-label{font-size:0.72rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+    .fact-value{font-size:0.95rem;color:var(--text);}
+    .disco-list{display:flex;flex-direction:column;gap:16px;}
+    .disco-row{display:flex;align-items:center;gap:20px;padding:16px;border:1px solid var(--border);}
+    .disco-row img{width:56px;height:56px;object-fit:cover;flex-shrink:0;}
+    .disco-row-title{font-weight:500;font-size:0.95rem;}
+    .disco-row-feat{font-size:0.82rem;color:var(--muted);font-style:italic;}
+    .photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+    .photo-grid img{width:100%;aspect-ratio:1;object-fit:cover;border:1px solid var(--border);cursor:pointer;transition:opacity 0.2s;}
+    .photo-grid img:hover{opacity:0.85;}
+    .streaming-row{display:flex;gap:20px;flex-wrap:wrap;margin-top:16px;}
+    .stream-btn{display:inline-block;padding:12px 28px;border:1.5px solid var(--text);color:var(--text);text-decoration:none;font-size:0.8rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.2s;}
+    .stream-btn:hover{background:var(--text);color:#fff;}
+    .stream-btn.accent{background:var(--accent);border-color:var(--accent);color:#fff;}
+    .stream-btn.accent:hover{opacity:0.85;}
+    .contact-block{background:#fafafa;border:1px solid var(--border);padding:32px;max-width:480px;}
+    .contact-block p{color:var(--muted);margin-bottom:8px;font-size:0.95rem;}
+    .contact-block a{color:var(--accent);text-decoration:none;font-weight:500;}
+    .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:1000;align-items:center;justify-content:center;}
+    .lightbox.open{display:flex;}
+    .lightbox img{max-width:88vw;max-height:88vh;object-fit:contain;}
+    .lightbox-close{position:fixed;top:24px;right:32px;color:#fff;font-size:2rem;cursor:pointer;opacity:0.7;}
+    .lightbox-close:hover{opacity:1;}
+    @media(max-width:768px){nav{padding:16px 20px;}.nav-links{gap:10px;}.page-wrap{padding:120px 24px 60px;}.page-title{font-size:2rem;}.hero-block{grid-template-columns:1fr;}.facts-grid{grid-template-columns:1fr;}.photo-grid{grid-template-columns:repeat(2,1fr);}}
+
+    /* ── HAMBURGER ── */
+    .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px; z-index:200; }
+    .hamburger span { display:block; width:24px; height:2px; background:var(--text); transition:all 0.3s ease; transform-origin:center; }
+    .hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity:0; }
+    .hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:768px){
+      nav{padding:16px 20px;}
+      .hamburger{display:flex;}
+      .nav-links{display:none;flex-direction:column;gap:0;position:fixed;top:0;left:0;right:0;height:100vh;height:-webkit-fill-available;background:rgba(255,255,255,0.99);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);justify-content:flex-start;align-items:center;z-index:150;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-top:90px;padding-bottom:40px;}
+      .nav-links.open{display:flex;}
+      .nav-links li{width:100%;text-align:center;}
+      .nav-links a{display:block;padding:14px 0;font-size:1rem;letter-spacing:0.15em;color:var(--text);border-bottom:1px solid var(--border);}
+      .nav-links li:last-child a{border-bottom:none;}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Suresh Raja Iyer</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html#about" class="nav-close">About</a></li>
+    <li><a href="index.html#music" class="nav-close">Music</a></li>
+    <li><a href="index.html#discography" class="nav-close">Songs</a></li>
+    <li><a href="index.html#gallery" class="nav-close">Gallery</a></li>
+    <li><a href="index.html#videos" class="nav-close">Videos</a></li>
+    <li><a href="index.html#testimonials" class="nav-close">Reviews</a></li>
+    <li><a href="blog.html">News</a></li>
+    <li><a href="press-kit.html">Press Kit</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+  <p class="section-label">Media & Collaborators</p>
+  <div class="divider"></div>
+  <h1 class="page-title">Press Kit</h1>
+
+  <!-- HERO -->
+  <div class="hero-block">
+    <div class="hero-photo"><img src="photos/suresh-photo-1.jpg" alt="Suresh Raja Iyer"/></div>
+    <div class="hero-text">
+      <h2>Suresh Raja Iyer</h2>
+      <p>Singer · Songwriter · Composer · Dallas, TX</p>
+      <p>Suresh Raja Iyer is a Chennai-born, Dallas-based independent music artist and founder of <strong>Suresh Raja Musicals, LLC</strong>. A proud grandson of Mridangam Vidwan Dr. T.K. Murthy, Suresh brings a deep classical heritage to contemporary multi-genre original compositions.</p>
+      <p>His music spans Hindi, Tamil, and cross-genre productions — collaborating with acclaimed artists including Nikhita Gandhi and Abhay Jodhpurkar. By day, he holds a doctoral degree in atmospheric chemistry and works as a senior engineer.</p>
+    </div>
+  </div>
+
+  <!-- QUICK FACTS -->
+  <div class="pk-section">
+    <h3>Quick Facts</h3>
+    <div class="facts-grid">
+      <div class="fact"><p class="fact-label">Based in</p><p class="fact-value">Dallas, Texas, USA</p></div>
+      <div class="fact"><p class="fact-label">Origin</p><p class="fact-value">Chennai, India</p></div>
+      <div class="fact"><p class="fact-label">Label</p><p class="fact-value">Suresh Raja Musicals, LLC</p></div>
+      <div class="fact"><p class="fact-label">Heritage</p><p class="fact-value">Grandson of Mridangam Vidwan Dr. T.K. Murthy</p></div>
+      <div class="fact"><p class="fact-label">Genres</p><p class="fact-value">Hindi Pop · Tamil · World Music · Indie</p></div>
+      <div class="fact"><p class="fact-label">Website</p><p class="fact-value">sureshrajaiyer.com</p></div>
+    </div>
+  </div>
+
+  <!-- DISCOGRAPHY -->
+  <div class="pk-section">
+    <h3>Discography</h3>
+    <div class="disco-list">
+      <div class="disco-row"><img src="photos/aa-lele-hawa.jpg" alt="Aa Lele Hawa"/><div><p class="disco-row-title">Aa Lele Hawa</p><p class="disco-row-feat">feat. Nikhita Gandhi</p></div></div>
+      <div class="disco-row"><img src="photos/anang-anangai.jpg" alt="Anang Anangai"/><div><p class="disco-row-title">Anang Anangai</p></div></div>
+      <div class="disco-row"><img src="photos/kadar-karai.jpg" alt="Kadar Karai"/><div><p class="disco-row-title">Kadar Karai</p><p class="disco-row-feat">feat. Anoop Sankar</p></div></div>
+      <div class="disco-row"><img src="photos/meri-jaan.jpg" alt="Meri Jaan"/><div><p class="disco-row-title">Meri Jaan</p></div></div>
+      <div class="disco-row"><img src="photos/munnera-chance.jpg" alt="Munnera Chance"/><div><p class="disco-row-title">Munnera Chance</p></div></div>
+      <div class="disco-row"><img src="photos/na-dilke-dhadkan.jpg" alt="Na Dilke Dhadkan"/><div><p class="disco-row-title">Na Dilke Dhadkan</p><p class="disco-row-feat">feat. Abhay Jodhpurkar</p></div></div>
+      <div class="disco-row"><img src="photos/nasheman.jpg" alt="Nasheman"/><div><p class="disco-row-title">Nasheman</p><p class="disco-row-feat">feat. Abhay Jodhpurkar</p></div></div>
+      <div class="disco-row"><img src="photos/single-social.jpg" alt="Single Social"/><div><p class="disco-row-title">Single Social</p><p class="disco-row-feat">feat. Nikhita Gandhi</p></div></div>
+      <div class="disco-row"><img src="photos/zameen-pe-sitare.jpg" alt="Zameen Pe Sitare"/><div><p class="disco-row-title">Zameen Pe Sitare</p></div></div>
+    </div>
+  </div>
+
+  <!-- PRESS PHOTOS -->
+  <div class="pk-section">
+    <h3>Press Photos</h3>
+    <p style="color:var(--muted);font-size:0.85rem;margin-bottom:20px;">Click any photo to enlarge. High resolution available on request.</p>
+    <div class="photo-grid">
+      <img src="photos/suresh-photo-1.jpg" alt="Suresh Raja Iyer"/>
+      <img src="photos/suresh-photo-2.jpg" alt="Suresh Raja Iyer"/>
+      <img src="photos/suresh-photo-3.jpg" alt="Suresh Raja Iyer"/>
+      <img src="photos/suresh-photo-4.jpg" alt="Suresh Raja Iyer"/>
+      <img src="photos/studio-1.jpg" alt="Suresh Raja Iyer Studio"/>
+      <img src="photos/studio-3.jpg" alt="Suresh Raja Iyer Studio"/>
+      <img src="photos/studio-5.jpg" alt="Suresh Raja Iyer Studio"/>
+      <img src="photos/studio-7.jpg" alt="Suresh Raja Iyer Studio"/>
+    </div>
+  </div>
+
+  <!-- STREAMING -->
+  <div class="pk-section">
+    <h3>Listen & Follow</h3>
+    <div class="streaming-row">
+      <a href="https://open.spotify.com/artist/3ndWtmfJL0Tc5kDFSboQvb" target="_blank" class="stream-btn accent">Spotify</a>
+      <a href="https://music.apple.com/us/artist/suresh-raja-iyer/1539591094" target="_blank" class="stream-btn">Apple Music</a>
+      <a href="https://www.youtube.com/channel/UC-gihCNHO_DTMIcpkTisfgg" target="_blank" class="stream-btn">YouTube</a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="pk-section">
+    <h3>Contact for Media & Collaboration</h3>
+    <div class="contact-block">
+      <p>For press inquiries, interview requests, or collaboration opportunities:</p>
+      <p><strong>Suresh Raja Musicals, LLC</strong></p>
+      <p>Dallas, Texas, USA</p>
+      <p>Website: <a href="https://sureshrajaiyer.com">sureshrajaiyer.com</a></p>
+    </div>
+  </div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">×</span>
+  <img id="lightbox-img" src="" alt=""/>
+</div>
+<script>
+  document.querySelectorAll('.photo-grid img').forEach(img => {
+    img.addEventListener('click', e => {
+      e.stopPropagation();
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox').classList.add('open');
+    });
+  });
+  function closeLightbox(){ document.getElementById('lightbox').classList.remove('open'); }
+  document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
+</script>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open');
+    document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+  });
+  document.querySelectorAll('.nav-close').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+  </script>
+</body>
+</html>

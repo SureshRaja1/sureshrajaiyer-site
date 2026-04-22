@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Nasheman Lyrics — Suresh Raja Iyer</title>
+  <meta name="description" content="Lyrics for Nasheman by Suresh Raja Iyer feat. Abhay Jodhpurkar."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&family=Noto+Sans+Devanagari:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK9LCJMJ3L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TK9LCJMJ3L');</script>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --bg:#fff; --text:#1a1a1a; --muted:#6b6b6b; --accent:#b8860b; --border:#e8e8e8; }
+html { scroll-behavior:smooth; }
+body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:20px 60px; background:rgba(255,255,255,0.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--border); }
+.nav-logo { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:600; color:var(--text); text-decoration:none; }
+.nav-links { display:flex; gap:28px; list-style:none; }
+.nav-links a { text-decoration:none; color:var(--muted); font-size:0.8rem; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; transition:color 0.2s; }
+.nav-links a:hover { color:var(--text); }
+.section-label { font-size:0.72rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+@media(max-width:768px){ nav{padding:16px 20px;} .nav-links{gap:12px;} }
+
+.page-wrap { max-width:720px; margin:0 auto; padding:140px 40px 80px; }
+.back-link { font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); text-decoration:none; display:inline-flex; align-items:center; gap:6px; margin-bottom:40px; }
+.back-link:hover { color:var(--accent); }
+.song-header { display:flex; gap:40px; align-items:flex-start; margin-bottom:48px; }
+.song-art { width:160px; height:160px; flex-shrink:0; overflow:hidden; border:1px solid var(--border); }
+.song-art img { width:100%; height:100%; object-fit:cover; }
+.song-meta h1 { font-family:'Playfair Display',serif; font-size:2.2rem; font-weight:600; margin-bottom:8px; }
+.song-meta .feat { color:var(--muted); font-style:italic; font-size:0.95rem; margin-bottom:6px; }
+.song-meta .credits { font-size:0.8rem; color:var(--muted); line-height:1.8; }
+.lyrics-body { border-top:1px solid var(--border); padding-top:40px; }
+.lyric-section { margin-bottom:36px; }
+.section-tag { font-size:0.68rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:16px; display:block; }
+.lyric-line { margin-bottom:14px; }
+.lyric-script { display:block; font-family:'Noto Sans Devanagari', sans-serif; font-size:1.25rem; font-weight:400; color:var(--text); line-height:1.4; }
+.lyric-roman { display:block; font-size:0.85rem; font-weight:300; color:var(--muted); letter-spacing:0.01em; line-height:1.4; margin-top:2px; }
+@media(max-width:600px){ .song-header{flex-direction:column;} .song-art{width:100%;height:240px;} .lyric-script{font-size:1.1rem;} }
+
+    /* ── HAMBURGER ── */
+    .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px; z-index:200; }
+    .hamburger span { display:block; width:24px; height:2px; background:var(--text); transition:all 0.3s ease; transform-origin:center; }
+    .hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity:0; }
+    .hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:768px){
+      nav{padding:16px 20px;}
+      .hamburger{display:flex;}
+      .nav-links{display:none;flex-direction:column;gap:0;position:fixed;top:0;left:0;right:0;height:100vh;height:-webkit-fill-available;background:rgba(255,255,255,0.99);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);justify-content:flex-start;align-items:center;z-index:150;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-top:90px;padding-bottom:40px;}
+      .nav-links.open{display:flex;}
+      .nav-links li{width:100%;text-align:center;}
+      .nav-links a{display:block;padding:14px 0;font-size:1rem;letter-spacing:0.15em;color:var(--text);border-bottom:1px solid var(--border);}
+      .nav-links li:last-child a{border-bottom:none;}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Suresh Raja Iyer</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html#about" class="nav-close">About</a></li>
+    <li><a href="index.html#music" class="nav-close">Music</a></li>
+    <li><a href="index.html#discography" class="nav-close">Songs</a></li>
+    <li><a href="index.html#gallery" class="nav-close">Gallery</a></li>
+    <li><a href="index.html#videos" class="nav-close">Videos</a></li>
+    <li><a href="index.html#testimonials" class="nav-close">Reviews</a></li>
+    <li><a href="blog.html">News</a></li>
+    <li><a href="press-kit.html">Press Kit</a></li>
+  </ul>
+</nav>
+<div class="page-wrap">
+  <a href="index.html" class="back-link">← Back to site</a>
+  <div class="song-header">
+    <div class="song-art"><img src="photos/nasheman.jpg" alt="Nasheman"/></div>
+    <div class="song-meta">
+      <p class="section-label">Lyrics</p>
+      <h1>Nasheman</h1>
+      <p class="feat">feat. Abhay Jodhpurkar</p>
+      <p class="credits">Composer: Suresh Raja Iyer<br>Suresh Raja Musicals, LLC</p>
+    </div>
+  </div>
+  <div class="lyrics-body">
+
+    <div class="lyric-section">
+      <span class="section-tag">Intro</span>
+      <div class="lyric-line">
+        <span class="lyric-script">यादों के महके नशेमन में</span>
+        <span class="lyric-roman">Yaadon ke mahke nasheman mein</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">गुनगुन से लम्हे हैं, जो छलके से रहते हैं</span>
+        <span class="lyric-roman">Gungun se lamhe hain, jo chhalke se rehte hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">यादों के महके नशेमन में</span>
+        <span class="lyric-roman">Yaadon ke mahke nasheman mein</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">गुनगुन से लम्हे हैं, जो छलके से रहते हैं</span>
+        <span class="lyric-roman">Gungun se lamhe hain, jo chhalke se rehte hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">आ गया ज़रा सा जो पास</span>
+        <span class="lyric-roman">Aa gaya zara sa jo paas</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">सिला देंगे हम मिटा</span>
+        <span class="lyric-roman">Sila denge hum mita</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">जो हुआ भुला, हो गई ख़ता</span>
+        <span class="lyric-roman">Jo hua bhula, ho gayi khata</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">दे दो माफ़ियाँ</span>
+        <span class="lyric-roman">De do maafiyaan</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">यादों के महके नशेमन में</span>
+        <span class="lyric-roman">Yaadon ke mahke nasheman mein</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">गुनगुन से लम्हे हैं, जो छलके से रहते हैं</span>
+        <span class="lyric-roman">Gungun se lamhe hain, jo chhalke se rehte hain</span>
+      </div>
+    </div>
+
+    <div class="lyric-section">
+      <span class="section-tag">Verse</span>
+      <div class="lyric-line">
+        <span class="lyric-script">तेरे बिना मौसम रूखे हैं</span>
+        <span class="lyric-roman">Tere bina mausam rookhe hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">नम है नज़र, लब सूखे से हैं</span>
+        <span class="lyric-roman">Nam hai nazar, lab sookhe se hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">दिल के महल पोशीदा हैं</span>
+        <span class="lyric-roman">Dil ke mahal poshida hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">दर-ओ-दरीचे टूटे हैं</span>
+        <span class="lyric-roman">Dar-o-dariche toote hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">बोलो, किसने ये लूटे हैं?</span>
+        <span class="lyric-roman">Bolo, kisne ye loote hain?</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">क्यूँ दिल टूटे हैं?</span>
+        <span class="lyric-roman">Kyun dil toote hain?</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">तुम हो कहाँ? आँखें ढूँढा करती हैं</span>
+        <span class="lyric-roman">Tum ho kahaan? Aankhein dhoondha karti hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">तुम हो कहाँ? तुमको नज़र तकती</span>
+        <span class="lyric-roman">Tum ho kahaan? tumko nazar takti</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">तेरे बिना मौसम रूखे हैं</span>
+        <span class="lyric-roman">Tere bina mausam rookhe hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">नम है नज़र, लब सूखे से हैं</span>
+        <span class="lyric-roman">Nam hai nazar, lab sookhe se hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">दिल के महल पोशीदा हैं</span>
+        <span class="lyric-roman">Dil ke mahal poshida hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">दर-ओ-दरीचे टूटे हैं</span>
+        <span class="lyric-roman">Dar-o-dariche toote hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">बोलो, किसने ये लूटे हैं?</span>
+        <span class="lyric-roman">Bolo, kisne ye loote hain?</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">क्यूँ दिल टूटे हैं?</span>
+        <span class="lyric-roman">Kyun dil toote hain?</span>
+      </div>
+    </div>
+
+    <div class="lyric-section">
+      <span class="section-tag">Bridge</span>
+      <div class="lyric-line">
+        <span class="lyric-script">अपना नशेमन है, अपना आँगन है</span>
+        <span class="lyric-roman">Apna nasheman hai, apna aangan hai</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">अपना गुलशन है, अपना ही गुलशन तुम संग है</span>
+        <span class="lyric-roman">Apna gulshan hai, apna hi gulshan tum sang hai</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">अपना नशेमन है, अपना आँगन है</span>
+        <span class="lyric-roman">Apna nasheman hai, apna aangan hai</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">अपना गुलशन है, अपना ही गुलशन तुम संग है</span>
+        <span class="lyric-roman">Apna gulshan hai, apna hi gulshan tum sang hai</span>
+      </div>
+    </div>
+
+    <div class="lyric-section">
+      <span class="section-tag">Chorus</span>
+      <div class="lyric-line">
+        <span class="lyric-script">यादों के महके नशेमन में</span>
+        <span class="lyric-roman">Yaadon ke mahke nasheman mein</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">गुनगुन से लम्हे हैं, जो छलके से रहते हैं</span>
+        <span class="lyric-roman">Gungun se lamhe hain, jo chhalke se rehte hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">यादों के महके नशेमन में</span>
+        <span class="lyric-roman">Yaadon ke mahke nasheman mein</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">गुनगुन से लम्हे हैं, जो छलके से रहते हैं</span>
+        <span class="lyric-roman">Gungun se lamhe hain, jo chhalke se rehte hain</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">आ गया ज़रा सा जो पास</span>
+        <span class="lyric-roman">Aa gaya zara sa jo paas</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">सिला देंगे हम मिटा</span>
+        <span class="lyric-roman">Sila denge hum mita</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">जो हुआ भुला, हो गई ख़ता</span>
+        <span class="lyric-roman">Jo hua bhula, ho gayi khata</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">दे दो माफ़ियाँ</span>
+        <span class="lyric-roman">De do maafiyaan</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">यादों के महके नशेमन में</span>
+        <span class="lyric-roman">Yaadon ke mahke nasheman mein</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">गुनगुन से लम्हे हैं, जो छलके से रहते हैं</span>
+        <span class="lyric-roman">Gungun se lamhe hain, jo chhalke se rehte hain</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open');
+    document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+  });
+  document.querySelectorAll('.nav-close').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>News & Updates — Suresh Raja Iyer</title>
+  <meta name="description" content="Latest news, releases, and updates from Suresh Raja Iyer, music artist based in Dallas, TX."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet"/>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK9LCJMJ3L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TK9LCJMJ3L');</script>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;}
+    :root{--bg:#fff;--text:#1a1a1a;--muted:#6b6b6b;--accent:#b8860b;--border:#e8e8e8;}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:20px 60px;background:rgba(255,255,255,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--text);text-decoration:none;}
+    .nav-links{display:flex;gap:28px;list-style:none;}
+    .nav-links a{text-decoration:none;color:var(--muted);font-size:0.8rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s;}
+    .nav-links a:hover{color:var(--text);}
+    .page-wrap{max-width:860px;margin:0 auto;padding:140px 40px 80px;}
+    .section-label{font-size:0.72rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+    .divider{width:48px;height:2px;background:var(--accent);margin-bottom:40px;}
+    .page-title{font-family:'Playfair Display',serif;font-size:3rem;font-weight:600;margin-bottom:16px;}
+    .posts{display:flex;flex-direction:column;gap:48px;margin-top:48px;}
+    .post{border-bottom:1px solid var(--border);padding-bottom:48px;}
+    .post:last-child{border-bottom:none;}
+    .post-date{font-size:0.78rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;}
+    .post-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:600;margin-bottom:12px;color:var(--text);}
+    .post-tag{display:inline-block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);padding:2px 10px;margin-bottom:14px;}
+    .post-body{font-size:0.95rem;color:var(--muted);font-weight:300;line-height:1.9;}
+    .post-body a{color:var(--accent);text-decoration:none;}
+    .post-body a:hover{text-decoration:underline;}
+    @media(max-width:768px){nav{padding:16px 20px;}.nav-links{gap:12px;}.page-wrap{padding:120px 24px 60px;}.page-title{font-size:2rem;}}
+
+    /* ── HAMBURGER ── */
+    .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px; z-index:200; }
+    .hamburger span { display:block; width:24px; height:2px; background:var(--text); transition:all 0.3s ease; transform-origin:center; }
+    .hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity:0; }
+    .hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:768px){
+      nav{padding:16px 20px;}
+      .hamburger{display:flex;}
+      .nav-links{display:none;flex-direction:column;gap:0;position:fixed;top:0;left:0;right:0;height:100vh;height:-webkit-fill-available;background:rgba(255,255,255,0.99);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);justify-content:flex-start;align-items:center;z-index:150;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-top:90px;padding-bottom:40px;}
+      .nav-links.open{display:flex;}
+      .nav-links li{width:100%;text-align:center;}
+      .nav-links a{display:block;padding:14px 0;font-size:1rem;letter-spacing:0.15em;color:var(--text);border-bottom:1px solid var(--border);}
+      .nav-links li:last-child a{border-bottom:none;}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Suresh Raja Iyer</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html#about" class="nav-close">About</a></li>
+    <li><a href="index.html#music" class="nav-close">Music</a></li>
+    <li><a href="index.html#discography" class="nav-close">Songs</a></li>
+    <li><a href="index.html#gallery" class="nav-close">Gallery</a></li>
+    <li><a href="index.html#videos" class="nav-close">Videos</a></li>
+    <li><a href="index.html#testimonials" class="nav-close">Reviews</a></li>
+    <li><a href="blog.html">News</a></li>
+    <li><a href="press-kit.html">Press Kit</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+  <p class="section-label">Updates</p>
+  <div class="divider"></div>
+  <h1 class="page-title">News & Releases</h1>
+
+  <div class="posts">
+
+    <article class="post">
+      <p class="post-date">April 2026</p>
+      <span class="post-tag">Website</span>
+      <h2 class="post-title">Welcome to the New sureshrajaiyer.com!</h2>
+      <div class="post-body">
+        <p>Excited to launch the brand new official website — a home for all my music, photos, videos, and updates. You'll find my full discography, lyrics to every song, and a gallery from the studio. Stay tuned for more updates, new releases, and behind-the-scenes content coming soon!</p>
+      </div>
+    </article>
+
+    <article class="post">
+      <p class="post-date">2025</p>
+      <span class="post-tag">New Release</span>
+      <h2 class="post-title">Na Dilke Dhadkan — feat. Abhay Jodhpurkar</h2>
+      <div class="post-body">
+        <p>My latest release featuring the incredible vocals of <strong>Abhay Jodhpurkar</strong>. Na Dilke Dhadkan is a heartfelt Hindi ballad produced by S. Nagarajan. Available now on <a href="https://open.spotify.com/artist/3ndWtmfJL0Tc5kDFSboQvb" target="_blank">Spotify</a> and <a href="https://music.apple.com/us/artist/suresh-raja-iyer/1539591094" target="_blank">Apple Music</a>.</p>
+      </div>
+    </article>
+
+    <article class="post">
+      <p class="post-date">2022</p>
+      <span class="post-tag">New Release</span>
+      <h2 class="post-title">Zameen Pe Sitare</h2>
+      <div class="post-body">
+        <p>A song close to my heart — Zameen Pe Sitare celebrates children as the true stars of the earth. Written by Raqueeb Aalam and mastered by Jeff Lowes. Listen now on all major streaming platforms.</p>
+      </div>
+    </article>
+
+    <article class="post">
+      <p class="post-date">2021</p>
+      <span class="post-tag">New Release</span>
+      <h2 class="post-title">Aa Lele Hawa — feat. Nikhita Gandhi</h2>
+      <div class="post-body">
+        <p>A breezy, soulful Hindi track featuring the stunning voice of <strong>Nikhita Gandhi</strong>. Lyrics by Raqueeb Aalam. Aa Lele Hawa is a celebration of freedom and dreams. Available on Spotify, Apple Music, and all platforms.</p>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open');
+    document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+  });
+  document.querySelectorAll('.nav-close').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Kadar Karai Lyrics — Suresh Raja Iyer</title>
+  <meta name="description" content="Lyrics for Kadar Karai by Suresh Raja Iyer feat. Anoop Sankar."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&family=Noto+Sans+Tamil:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK9LCJMJ3L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TK9LCJMJ3L');</script>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --bg:#fff; --text:#1a1a1a; --muted:#6b6b6b; --accent:#b8860b; --border:#e8e8e8; }
+html { scroll-behavior:smooth; }
+body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:20px 60px; background:rgba(255,255,255,0.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--border); }
+.nav-logo { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:600; color:var(--text); text-decoration:none; }
+.nav-links { display:flex; gap:28px; list-style:none; }
+.nav-links a { text-decoration:none; color:var(--muted); font-size:0.8rem; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; transition:color 0.2s; }
+.nav-links a:hover { color:var(--text); }
+.section-label { font-size:0.72rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+@media(max-width:768px){ nav{padding:16px 20px;} .nav-links{gap:12px;} }
+
+.page-wrap { max-width:720px; margin:0 auto; padding:140px 40px 80px; }
+.back-link { font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); text-decoration:none; display:inline-flex; align-items:center; gap:6px; margin-bottom:40px; }
+.back-link:hover { color:var(--accent); }
+
+.song-header { display:flex; gap:40px; align-items:flex-start; margin-bottom:48px; }
+.song-art { width:160px; height:160px; flex-shrink:0; overflow:hidden; border:1px solid var(--border); }
+.song-art img { width:100%; height:100%; object-fit:cover; }
+.song-meta h1 { font-family:'Playfair Display',serif; font-size:2.2rem; font-weight:600; margin-bottom:8px; }
+.song-meta .feat { color:var(--muted); font-style:italic; font-size:0.95rem; margin-bottom:6px; }
+.song-meta .credits { font-size:0.8rem; color:var(--muted); line-height:1.8; }
+
+.lyrics-body { border-top:1px solid var(--border); padding-top:40px; }
+.lyric-section { margin-bottom:36px; }
+.section-tag { font-size:0.68rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:16px; display:block; }
+.lyric-line { margin-bottom:14px; }
+.lyric-script { display:block; font-family:'Noto Sans Tamil', sans-serif; font-size:1.25rem; font-weight:400; color:var(--text); line-height:1.5; }
+.lyric-roman { display:block; font-size:0.85rem; font-weight:300; color:var(--muted); letter-spacing:0.01em; line-height:1.4; margin-top:2px; }
+
+@media(max-width:600px){
+  .song-header{flex-direction:column;}
+  .song-art{width:100%;height:240px;}
+  .lyric-script{font-size:1.1rem;}
+}
+
+    /* ── HAMBURGER ── */
+    .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px; z-index:200; }
+    .hamburger span { display:block; width:24px; height:2px; background:var(--text); transition:all 0.3s ease; transform-origin:center; }
+    .hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity:0; }
+    .hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:768px){
+      nav{padding:16px 20px;}
+      .hamburger{display:flex;}
+      .nav-links{display:none;flex-direction:column;gap:0;position:fixed;top:0;left:0;right:0;height:100vh;height:-webkit-fill-available;background:rgba(255,255,255,0.99);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);justify-content:flex-start;align-items:center;z-index:150;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-top:90px;padding-bottom:40px;}
+      .nav-links.open{display:flex;}
+      .nav-links li{width:100%;text-align:center;}
+      .nav-links a{display:block;padding:14px 0;font-size:1rem;letter-spacing:0.15em;color:var(--text);border-bottom:1px solid var(--border);}
+      .nav-links li:last-child a{border-bottom:none;}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Suresh Raja Iyer</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html#about" class="nav-close">About</a></li>
+    <li><a href="index.html#music" class="nav-close">Music</a></li>
+    <li><a href="index.html#discography" class="nav-close">Songs</a></li>
+    <li><a href="index.html#gallery" class="nav-close">Gallery</a></li>
+    <li><a href="index.html#videos" class="nav-close">Videos</a></li>
+    <li><a href="index.html#testimonials" class="nav-close">Reviews</a></li>
+    <li><a href="blog.html">News</a></li>
+    <li><a href="press-kit.html">Press Kit</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+  <a href="index.html" class="back-link">← Back to site</a>
+
+  <div class="song-header">
+    <div class="song-art"><img src="photos/kadar-karai.jpg" alt="Kadar Karai"/></div>
+    <div class="song-meta">
+      <p class="section-label">Lyrics</p>
+      <h1>Kadar Karai</h1>
+      <p class="feat">feat. Anoop Sankar</p>
+      <p class="credits">
+        Composer: Suresh Raja Iyer<br>
+        Suresh Raja Musicals, LLC
+      </p>
+    </div>
+  </div>
+
+  <div class="lyrics-body">
+
+    <!-- CHORUS -->
+    <div class="lyric-section">
+      <span class="section-tag">Verse 1</span>
+      <div class="lyric-line">
+        <span class="lyric-script">சில்லென்று வீசும் இன்னாழி</span>
+        <span class="lyric-roman">Sillendru veesum innaazhi</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">காற்றோடு கமணம் சேர்க்காதோ</span>
+        <span class="lyric-roman">Kaatrodu gamanam serkkaadhoo</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">நில்லென்று சொல்லும் என் ஆழி</span>
+        <span class="lyric-roman">Nillendru sollum en aazhi</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">என்னோடு கதைகள் பேசாதோ</span>
+        <span class="lyric-roman">Ennodu khadhaikal pesaadhoo</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">வான் கொண்ட நீலம்</span>
+        <span class="lyric-roman">Vaan konda neelam</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">கடலுக்கும் தந்தாயோ</span>
+        <span class="lyric-roman">Kadalukkum thandhaayo</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">கால் தீண்டும் அலையுமானயோ</span>
+        <span class="lyric-roman">Kaal theendum alaiyumaaanayo</span>
+      </div>
+    </div>
+
+    <!-- VERSE -->
+    <div class="lyric-section">
+      <span class="section-tag">Verse</span>
+      <div class="lyric-line">
+        <span class="lyric-script">அழியாத மணலின் கால் சுவடாய்</span>
+        <span class="lyric-roman">Azhiyaadha manalin kaal suvadaai</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">ஆறாத மனதின் காயங்கள்</span>
+        <span class="lyric-roman">Aaraadha manadhin kaayangal</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">தீராத இரவின் தாபங்கள்</span>
+        <span class="lyric-roman">Theeraadha iravin thaabangal</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">மணல்வீடாய் சரியும் காலங்கள்</span>
+        <span class="lyric-roman">Manalveedaai sariyum kaalangal</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">மேகத்தின் ஒளிவு மறைவிலே</span>
+        <span class="lyric-roman">Megathhin olivu maraivile</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">விளையாடும் நிலவுக்கு நகலும் தந்தாயோ</span>
+        <span class="lyric-roman">Vilaiyaadum nilavukku nagalum thandhaayo</span>
+      </div>
+    </div>
+
+    <!-- BRIDGE -->
+    <div class="lyric-section">
+      <span class="section-tag">Bridge</span>
+      <div class="lyric-line">
+        <span class="lyric-script">ஆசை என்னோடுதான் ஆழம் போகின்றதே</span>
+        <span class="lyric-roman">Aasai ennoduthaan aazham poginradhey</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">கண்டும் காணாத காட்சியென விரிகிறாய்</span>
+        <span class="lyric-roman">Kandum kaanaadha kaatchiyena virigiraai</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">தேடல் என்னோடுதான் முடியும் கரையிலே</span>
+        <span class="lyric-roman">Thedal ennoduthaan mudiyum karaiyile</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">தொடங்கும் மறு அலை மாலை பொழுதிலே</span>
+        <span class="lyric-roman">Thodangum maru alai maalai pozhudhile</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">மாறிவிடும் மனநிலை</span>
+        <span class="lyric-roman">Maarivudum mananilai</span>
+      </div>
+    </div>
+
+    <!-- CHORUS REPEAT -->
+    <div class="lyric-section">
+      <span class="section-tag">Chorus</span>
+      <div class="lyric-line">
+        <span class="lyric-script">சில்லென்று வீசும் இன்னாழி</span>
+        <span class="lyric-roman">Sillendru veesum innaazhi</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">காற்றோடு கமணம் சேர்க்காதோ</span>
+        <span class="lyric-roman">Kaatrodu gamanam serkkaadhoo</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">நில்லென்று சொல்லும் என் ஆழி</span>
+        <span class="lyric-roman">Nillendru sollum en aazhi</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">என்னோடு கதைகள் பேசாதோ</span>
+        <span class="lyric-roman">Ennodu khadhaikal pesaadhoo</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">வான் கொண்ட நீலம்</span>
+        <span class="lyric-roman">Vaan konda neelam</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">கடலுக்கும் தந்தாயோ</span>
+        <span class="lyric-roman">Kadalukkum thandhaayo</span>
+      </div>
+      <div class="lyric-line">
+        <span class="lyric-script">கால் தீண்டும் அலையுமானயோ</span>
+        <span class="lyric-roman">Kaal theendum alaiyumaanayo</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open');
+    document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+  });
+  document.querySelectorAll('.nav-close').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+  </script>
+</body>
+</html>
